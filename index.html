@@ -53,10 +53,8 @@
         <div class="row">
         <!-- questa row conterrà i pallini -->
           <div class="col-12 d-flex justify-content-center">
-            <a href="#" ><i class="far fa-circle" data-index="0" @click="dot"></i></a>
-            <a href="#" ><i class="far fa-circle" data-index="1" @click="dot"></i></a>
-            <a href="#" ><i class="far fa-circle" data-index="2" @click="dot"></i></a>
-            <a href="#" ><i class="far fa-circle" data-index="3" @click="dot"></i></a>
+              <!-- creo tanti pallini quanti sono le immagini nell'array -->
+              <i class="far fa-circle" v-for="(element, index) in imgArray" v-bind:data-index="index" @click="dot"></i>
           </div>
         </div>
 
