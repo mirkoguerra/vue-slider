@@ -1,4 +1,9 @@
-/* HELPER */
-.border {
-  border: 1px solid black;
+/*  */
+section#slider div.container div.row div a {
+  padding: 50px;
+  font-size: 3rem;
+}
+section#slider div.container div.row div img {
+  width: 90%;
+  height: 300px;
 }

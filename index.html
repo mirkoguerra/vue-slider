@@ -25,23 +25,25 @@
   <body>
 
     <section id="slider">
-    <!-- utilizzo questa section in modo da collegarne il contenuto a quanto scrivo in vue -->
+    <!-- utilizzo questa section in modo da collegarne il contenuto a quanto scrivo in Vue -->
       <div class="container">
-      <!-- sfrutto bootstrap per il layout -->
+      <!-- sfrutto Bootstrap per il layout -->
         <div class="row">
 
-          <div class="col-3 d-flex justify-content-center border">
+          <div class="col-3 d-flex justify-content-center align-items-center">
           <!-- colonna che conterra la freccia per tornare all'immagine precedente -->
-            <a href="#"><i class="fas fa-hand-point-left"></i></a>
+            <a href="#" @click="prev"><i class="fas fa-hand-point-left"></i></a>
           </div>
 
-          <div class="col-6 border">
+          <div class="col-6 d-flex justify-content-center align-items-center">
           <!-- colonna che conterrà le immagini -->
+            <img v-bind:src="imgArray[imgArrayIndex]" alt="immagine" @click="next">
+            <!-- anche cliccando sull'immagine si passa all'immagine successiva -->
           </div>
 
-          <div class="col-3 d-flex justify-content-center border">
+          <div class="col-3 d-flex justify-content-center align-items-center">
           <!-- colonna che conterra la freccia per andare all'immagine successiva -->
-            <a href="#"><i class="fas fa-hand-point-right"></i></a>
+            <a href="#" @click="next"><i class="fas fa-hand-point-right"></i></a>
           </div>
 
         </div>
