@@ -1,9 +1,16 @@
 /*  */
-section#slider div.container div.row div a {
+body {
+  background-color: lightgrey;
+}
+section#slider div.container div.row div.col-3 a {
   padding: 50px;
   font-size: 3rem;
 }
-section#slider div.container div.row div img {
+section#slider div.container div.row div.col-6 img {
   width: 90%;
   height: 300px;
+}
+section#slider div.container div.row div.col-12 a {
+  padding: 30px;
+  font-size: 2rem;
 }

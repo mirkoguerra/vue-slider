@@ -28,6 +28,18 @@ const slider = new Vue({
       } else {
         this.imgArrayIndex = (this.imgArrayIndex + 1)
       }
+    },
+    uno: function(){
+      this.imgArrayIndex = 0;
+    },
+    due: function(){
+      this.imgArrayIndex = 1;
+    },
+    tre: function(){
+      this.imgArrayIndex = 2;
+    },
+    quattro: function(){
+      this.imgArrayIndex = 3;
     }
   }
 })

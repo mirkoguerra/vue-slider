@@ -28,7 +28,9 @@
     <!-- utilizzo questa section in modo da collegarne il contenuto a quanto scrivo in Vue -->
       <div class="container">
       <!-- sfrutto Bootstrap per il layout -->
+
         <div class="row">
+        <!-- questa row conterrà l'immagine e le frecce ai suoi lati -->
 
           <div class="col-3 d-flex justify-content-center align-items-center">
           <!-- colonna che conterra la freccia per tornare all'immagine precedente -->
@@ -47,6 +49,17 @@
           </div>
 
         </div>
+
+        <div class="row">
+        <!-- questa row conterrà i pallini -->
+          <div class="col-12 d-flex justify-content-center">
+            <a href="#" @click="uno"><i class="far fa-circle"></i></a>
+            <a href="#" @click="due"><i class="far fa-circle"></i></a>
+            <a href="#" @click="tre"><i class="far fa-circle"></i></a>
+            <a href="#" @click="quattro"><i class="far fa-circle"></i></a>
+          </div>
+        </div>
+
       </div>
     </section>
 
