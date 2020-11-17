@@ -29,17 +29,9 @@ const slider = new Vue({
         this.imgArrayIndex = (this.imgArrayIndex + 1)
       }
     },
-    uno: function(){
-      this.imgArrayIndex = 0;
-    },
-    due: function(){
-      this.imgArrayIndex = 1;
-    },
-    tre: function(){
-      this.imgArrayIndex = 2;
-    },
-    quattro: function(){
-      this.imgArrayIndex = 3;
+    // funzione che assegna a imgArrayIndex il valore corrispondente al pallino su cui premo
+    dot: function(event){
+      this.imgArrayIndex = event.target.dataset.index;
     }
   }
 })
