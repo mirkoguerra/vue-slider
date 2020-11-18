@@ -35,3 +35,12 @@ const slider = new Vue({
     }
   }
 })
+
+// gestisco le frecce della tastiera
+document.addEventListener("keydown", function(element){
+  if (element.key == "ArrowLeft"){
+    slider.prev();
+  } else if (element.key == "ArrowRight"){
+    slider.next();
+  }  
+})

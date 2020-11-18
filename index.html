@@ -53,8 +53,8 @@
         <div class="row">
         <!-- questa row conterrà i pallini -->
           <div class="col-12 d-flex justify-content-center">
-              <!-- creo tanti pallini quanti sono le immagini nell'array -->
-              <i class="far fa-circle" v-for="(element, index) in imgArray" v-bind:data-index="index" @click="dot"></i>
+              <!-- creo tanti pallini quanti sono le immagini nell'array, se l'indice corrisponde a quello dell'immagine visualizzata, il pallino sarà pieno, altrimenti sarà vuoto -->
+              <i v-bind:class="[(index == imgArrayIndex) ? 'fas' : 'far', 'fa-circle']" v-for="(element, index) in imgArray" v-bind:data-index="index" @click="dot"></i>
           </div>
         </div>
 
