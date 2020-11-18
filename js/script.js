@@ -28,10 +28,6 @@ const slider = new Vue({
       } else {
         this.imgArrayIndex = (this.imgArrayIndex + 1)
       }
-    },
-    // funzione che assegna a imgArrayIndex il valore corrispondente al pallino su cui premo
-    dot: function(event){
-      this.imgArrayIndex = event.target.dataset.index;
     }
   }
 })
