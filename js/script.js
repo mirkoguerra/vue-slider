@@ -42,5 +42,5 @@ document.addEventListener("keydown", function(element){
     slider.prev();
   } else if (element.key == "ArrowRight"){
     slider.next();
-  }  
+  }
 })
